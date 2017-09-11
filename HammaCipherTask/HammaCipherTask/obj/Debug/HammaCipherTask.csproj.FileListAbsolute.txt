@@ -1,0 +1,6 @@
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\HammaCipherTask\HammaCipherTask\bin\Debug\HammaCipherTask.exe.config
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\HammaCipherTask\HammaCipherTask\bin\Debug\HammaCipherTask.exe
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\HammaCipherTask\HammaCipherTask\bin\Debug\HammaCipherTask.pdb
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\HammaCipherTask\HammaCipherTask\obj\Debug\HammaCipherTask.csprojResolveAssemblyReference.cache
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\HammaCipherTask\HammaCipherTask\obj\Debug\HammaCipherTask.exe
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\HammaCipherTask\HammaCipherTask\obj\Debug\HammaCipherTask.pdb

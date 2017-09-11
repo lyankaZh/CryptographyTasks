@@ -1,0 +1,6 @@
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\СaesarСipherTask\СaesarСipherTask\bin\Debug\СaesarСipherTask.exe.config
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\СaesarСipherTask\СaesarСipherTask\bin\Debug\СaesarСipherTask.exe
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\СaesarСipherTask\СaesarСipherTask\bin\Debug\СaesarСipherTask.pdb
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\СaesarСipherTask\СaesarСipherTask\obj\Debug\СaesarСipherTask.csprojResolveAssemblyReference.cache
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\СaesarСipherTask\СaesarСipherTask\obj\Debug\СaesarСipherTask.exe
+E:\Універ\4 курс\1 семестр\Захист інформації\Лабораторні\СaesarСipherTask\СaesarСipherTask\obj\Debug\СaesarСipherTask.pdb
