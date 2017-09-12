@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HammaCipherTask
 {
@@ -10,15 +6,16 @@ namespace HammaCipherTask
     {
         public static void Main(string[] args)
         {
-            //try
-            //{
-                HammaCipherManager manager = new HammaCipherManager();
+            try
+            {
+                var manager = new HammaCipherManager();
                 manager.DemonstrateWork();
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine(e);
-            //}
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }

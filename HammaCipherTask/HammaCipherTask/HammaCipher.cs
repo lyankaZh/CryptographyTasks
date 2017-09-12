@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace HammaCipherTask
 {
@@ -14,12 +13,11 @@ namespace HammaCipherTask
         public const int TotalAmountOfLettersInTable = 53;
         private const int AmountOfNumbersInKey = 3;
 
-
-        private static readonly Dictionary<char, int> _tableOfReplace;
+        private static readonly Dictionary<char, int> TableOfReplace;
 
         static HammaCipher()
         {
-            _tableOfReplace = FormTableOfReplace();
+            TableOfReplace = FormTableOfReplace();
         }
 
         private static Dictionary<char, int> FormTableOfReplace()
@@ -39,7 +37,6 @@ namespace HammaCipherTask
             }
 
             tableOfReplace.Add(' ', number);
-
             return tableOfReplace;
         }
 
@@ -57,7 +54,7 @@ namespace HammaCipherTask
                 sequence.Add(key[i]);
             }
 
-            for (int i = AmountOfNumbersInKey; i < amountOfLettersInEncryptedText + 1; i++)
+            for (var i = AmountOfNumbersInKey; i < amountOfLettersInEncryptedText + 1; i++)
             {
                 sequence.Add((sequence[i - 1] + sequence[i - 3]) % TotalAmountOfLettersInTable);
             }
@@ -83,12 +80,12 @@ namespace HammaCipherTask
             var randomHamma = GetRandomHamma(sequenceBasedOnKeys);
             var encryptedText = new StringBuilder();
 
-            int index = 0;
+            var index = 0;
             foreach (var symbol in originalText)
             {
-                if (_tableOfReplace.ContainsKey(symbol))
+                if (TableOfReplace.ContainsKey(symbol))
                 {
-                    encryptedText.Append((_tableOfReplace[symbol] + randomHamma[index])%TotalAmountOfLettersInTable);
+                    encryptedText.Append((TableOfReplace[symbol] + randomHamma[index])%TotalAmountOfLettersInTable);
                     encryptedText.Append(' ');
                 }
                 else
@@ -103,10 +100,32 @@ namespace HammaCipherTask
             return encryptedText.ToString();
         }
 
-        //public static string Decrypt(string encryptedText)
-        //{
+        public static string Decrypt(string encryptedText, List<int> key)
+        {
+            var splitedEncryptedText = encryptedText.Substring(0, encryptedText.Length - 1).Split(' ');
+            var sequenceBasedOnKeys = GetSequnceBasedOnKey(key, splitedEncryptedText.Length);
+            var randomHamma = GetRandomHamma(sequenceBasedOnKeys);
+            var originalText = new StringBuilder();
 
-        //}
+            var index = 0;
+            foreach (var symbol in splitedEncryptedText)
+            {
+                if (symbol.All(char.IsDigit))
+                {
+                    var numberOfLetter = (int.Parse(symbol) + TotalAmountOfLettersInTable - randomHamma[index]) %
+                                         TotalAmountOfLettersInTable;
+                    originalText.Append(TableOfReplace.Where(x => x.Value == numberOfLetter).Select(x => x.Key)
+                        .Single());
+                }
+                else
+                {
+                    originalText.Append(symbol);
+                }
 
+                index++;
+            }
+
+            return originalText.ToString();
+        }
     }
 }
