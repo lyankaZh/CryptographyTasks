@@ -1,0 +1,6 @@
+E:\Універ\4 курс\1 семестр\Захист інформації\CryptographyTasks\CryptographyTasks\RSATask\RSATask\bin\Debug\RSATask.exe.config
+E:\Універ\4 курс\1 семестр\Захист інформації\CryptographyTasks\CryptographyTasks\RSATask\RSATask\bin\Debug\RSATask.exe
+E:\Універ\4 курс\1 семестр\Захист інформації\CryptographyTasks\CryptographyTasks\RSATask\RSATask\bin\Debug\RSATask.pdb
+E:\Універ\4 курс\1 семестр\Захист інформації\CryptographyTasks\CryptographyTasks\RSATask\RSATask\obj\Debug\RSATask.csprojResolveAssemblyReference.cache
+E:\Універ\4 курс\1 семестр\Захист інформації\CryptographyTasks\CryptographyTasks\RSATask\RSATask\obj\Debug\RSATask.exe
+E:\Універ\4 курс\1 семестр\Захист інформації\CryptographyTasks\CryptographyTasks\RSATask\RSATask\obj\Debug\RSATask.pdb

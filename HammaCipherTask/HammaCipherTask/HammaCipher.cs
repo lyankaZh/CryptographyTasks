@@ -66,7 +66,7 @@ namespace HammaCipherTask
         {
             var randomHamma = new List<int>();
 
-            for (int i = 0; i < sequenceBasedOnKeys.Count - 1; i++)
+            for (var i = 0; i < sequenceBasedOnKeys.Count - 1; i++)
             {
                 randomHamma.Add((sequenceBasedOnKeys[i] + sequenceBasedOnKeys[i + 1]) % TotalAmountOfLettersInTable);
             }
