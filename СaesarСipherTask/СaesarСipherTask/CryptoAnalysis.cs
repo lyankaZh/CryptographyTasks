@@ -37,7 +37,7 @@ namespace СaesarСipherTask
             var length = encryptedText.Length;
             var keys = frequencyTable.Keys.ToList();
 
-            foreach (char key in keys)
+            foreach (var key in keys)
             {
                 frequencyTable[key] = frequencyTable[key] / length;
             }

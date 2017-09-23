@@ -31,7 +31,7 @@ namespace RSATask
 
         private void DemostrateEncrypting(FileManager fileManager)
         {
-            var originalText = fileManager.Read(_orinalTextFileName);
+            var originalText = fileManager.Read(_orinalTextFileName).ToLower();
 
             var encryptedText = RSA.Encrypt(originalText);
 
@@ -63,7 +63,7 @@ namespace RSATask
 
         public void DemonstrateDigitalSignature(FileManager fileManager)
         {
-            var originalText = fileManager.Read(_orinalTextFileName);
+            var originalText = fileManager.Read(_orinalTextFileName).ToLower();
 
             var digitalSignature = RSA.GetDigitalSignature(originalText);
 
