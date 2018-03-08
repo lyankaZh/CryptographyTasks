@@ -3,6 +3,7 @@ using System.Text;
 
 namespace СaesarСipherTask
 {
+
     public static class CaesarCipher
     {
         private const int LowerLetterLowerBound = 97;
