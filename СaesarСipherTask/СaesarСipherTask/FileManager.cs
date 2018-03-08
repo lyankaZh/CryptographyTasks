@@ -13,7 +13,6 @@ namespace СaesarСipherTask
             }
         }
 
-
         public void Write(string text, string file)
         {
             using (var writer = new StreamWriter(file))
