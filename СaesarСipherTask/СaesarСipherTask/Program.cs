@@ -7,7 +7,8 @@ namespace СaesarСipherTask
         public static void Main(string[] args)
         {
             var manager = new CaesarCipherManager();
-            manager.DemonstrateWork(); 
+            manager.DemonstrateWork();
+
             Console.ReadLine();
         }
     }
