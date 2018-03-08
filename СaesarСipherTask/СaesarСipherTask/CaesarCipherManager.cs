@@ -4,6 +4,7 @@ namespace СaesarСipherTask
 {
     public class CaesarCipherManager
     {
+
         private readonly string _orinalTextFileName = "original.txt";
         private readonly string _encryptedTextFileName = "encrypted.txt";
 
