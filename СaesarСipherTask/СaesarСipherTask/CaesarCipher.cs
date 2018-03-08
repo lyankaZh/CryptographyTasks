@@ -12,6 +12,7 @@ namespace СaesarСipherTask
         private const int UpperLetterUpperBound = 90;
         private const int AmountOfLetters = 26;
 
+
         public static string Encrypt(string originalText, int offset)
         {
             offset = offset % AmountOfLetters;
